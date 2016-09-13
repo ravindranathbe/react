@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Content2 from './Content2.jsx';
 import FormEx from './FormEx.jsx';
 import BtnEx from './BtnEx.jsx';
+import RefsEx from './RefsEx.jsx';
 
 class App extends React.Component {
     constructor(props) {
@@ -88,6 +89,7 @@ class App extends React.Component {
                 <Content2 myNumber = {this.state.data3}></Content2>
                 <FormEx />
                 <BtnEx />
+                <RefsEx />
             </div>
         );
     }
