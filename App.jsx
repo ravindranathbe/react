@@ -4,6 +4,7 @@ import Content2 from './Content2.jsx';
 import FormEx from './FormEx.jsx';
 import BtnEx from './BtnEx.jsx';
 import RefsEx from './RefsEx.jsx';
+import KeysEx from './KeysEx.jsx';
 
 class App extends React.Component {
     constructor(props) {
@@ -90,6 +91,7 @@ class App extends React.Component {
                 <FormEx />
                 <BtnEx />
                 <RefsEx />
+                <KeysEx />
             </div>
         );
     }
