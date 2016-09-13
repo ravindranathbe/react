@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Content2 from './Content2.jsx';
 import FormEx from './FormEx.jsx';
+import BtnEx from './BtnEx.jsx';
 
 class App extends React.Component {
     constructor(props) {
@@ -86,6 +87,7 @@ class App extends React.Component {
                 <button onClick = {this.setNewNumber}>INCREMENT</button>
                 <Content2 myNumber = {this.state.data3}></Content2>
                 <FormEx />
+                <BtnEx />
             </div>
         );
     }
