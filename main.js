@@ -1,8 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.jsx';
+import { Router, Route, Link, browserHistory, IndexRoute  } from 'react-router';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+import App from './App.jsx';
+import RouteEx from './RouteEx.jsx';
+import Home from './Home.jsx';
+import About from './About.jsx';
+
+// ReactDOM.render(<App />, document.getElementById('app'));
+// ReactDOM.render(<RouteEx />, document.getElementById('app'));
+ReactDOM.render((
+   <Router history = {browserHistory}>
+      <Route path = "/" component = {RouteEx}>
+         <IndexRoute component = {Home} />
+         <Route path = "home" component = {Home} />
+         <Route path = "about" component = {About} />
+      </Route>
+   </Router>
+	
+), document.getElementById('app'));
 
 /*
 setTimeout(() => {
