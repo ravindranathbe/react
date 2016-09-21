@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// == Hello App ==
+import HwApp from './HwApp.jsx';
+ReactDOM.render(<HwApp/>, document.getElementById('app'));
+// == Hello App End ==
+
 // == Examples ==
+/*
 import HelloApp from './HelloApp.jsx';
 var v_attr2 = 1;
 ReactDOM.render(<HelloApp attr1="Ravi" attr2={v_attr2} />, document.getElementById('app'));
+*/
 // == Examples END == 
 
 /*
