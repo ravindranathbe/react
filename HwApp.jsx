@@ -33,9 +33,11 @@ class HwApp extends React.Component {
             <h2>Recent changes</h2>
             <table className="table table-striped">
             <thead>
+                {/*Heading*/}
                 <THead2 data = {this.state.heading} />
             </thead>
             <tbody>
+                {/*Rows*/}
                 {this.state.data.map((row, i) => <TRow data = {row} key = {i} origKey = {i}  />)}
             </tbody>
             </table>
@@ -50,6 +52,12 @@ HwApp.propTypes = {
 
 HwApp.defaultProps = {
     
+}
+
+class RCTable extends React.Component {
+    render() {
+        return (<table>{this.props.children}</table>);
+    }
 }
 
 class THead extends React.Component {
