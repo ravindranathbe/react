@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// == Tutorial ==
+// Source: http://buildwithreact.com/tutorial
+ReactDOM.render(<h1>Welcome!</h1>, document.getElementById('app'));
+// == Tutorial End ==
+
 // == Hello App ==
-import HwApp from './HwApp.jsx';
-ReactDOM.render(<HwApp/>, document.getElementById('app'));
+// import HwApp from './HwApp.jsx';
+// ReactDOM.render(<HwApp/>, document.getElementById('app'));
 // == Hello App End ==
 
 // == Examples ==
